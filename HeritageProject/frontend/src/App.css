@@ -1,0 +1,8 @@
+.nav-link {
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff !important; /* Change to your preferred hover color */
+  border-bottom: 2px solid #007bff; /* Add a subtle underline on hover */
+}

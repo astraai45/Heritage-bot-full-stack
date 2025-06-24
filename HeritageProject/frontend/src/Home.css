@@ -1,0 +1,77 @@
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1623068481023-71c506712e93?auto=format&fit=crop&q=80&w=2000")
+      center/cover;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to top, white, transparent);
+}
+
+.heritage-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.heritage-card:hover {
+  transform: translateY(-5px);
+}
+
+.heritage-card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.section-header {
+  border-bottom: 3px solid #f8f9fa;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-header h2 {
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.card-title {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.card-subtitle {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.card-text {
+  color: #34495e;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 40vh;
+  }
+
+  .heritage-card img {
+    height: 200px;
+  }
+}

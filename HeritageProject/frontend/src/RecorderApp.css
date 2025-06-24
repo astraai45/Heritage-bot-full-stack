@@ -1,0 +1,106 @@
+/* General Styles */
+.recorder-app {
+  position: relative;
+  color: #ffffff; /* Light text */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Background Image */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"); /* Add your image URL */
+  background-size: cover;
+  background-position: center;
+  z-index: -2; /* Behind the dark overlay */
+}
+
+/* Dark Overlay */
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark overlay */
+  z-index: -1; /* Above the background image */
+}
+
+/* Header Styles */
+.header {
+  background-color: rgba(
+    18,
+    18,
+    18,
+    0.9
+  ); /* Slightly transparent dark header */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Response Box Styles */
+.response-box {
+  margin: 20px auto;
+  max-width: 80%;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border: none;
+  color: #ffffff; /* Light text */
+}
+
+/* Control Buttons Styles */
+.control-button {
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+  color: #ffffff; /* Light text */
+}
+
+.control-button:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly brighter on hover */
+}
+
+/* Send Button Styles */
+.send-button {
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background-color: #007bff; /* Primary blue */
+  border: none;
+  color: #ffffff; /* Light text */
+}
+
+.send-button:hover {
+  transform: scale(1.05);
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Fixed Bottom Styles */
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(
+    18,
+    18,
+    18,
+    0.9
+  ); /* Slightly transparent dark background */
+}

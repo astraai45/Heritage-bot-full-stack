@@ -1,0 +1,47 @@
+/* Add these styles in your CSS file for better chat styling */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .user-message {
+    background-color: #4caf50;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .bot-message {
+    background-color: #f1f1f1;
+    color: black;
+    align-self: flex-start;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .language-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .language-button {
+    min-width: 100px;
+    padding: 8px 16px;
+    font-weight: 500;
+  }
+  
+  .control-button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    margin: 0 5px;
+  }
+  
+  .error-box {
+    max-width: 500px;
+    margin: 0 auto 20px;
+  }

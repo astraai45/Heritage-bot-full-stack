@@ -1,0 +1,137 @@
+/* Chat Container */
+/* .chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #f0f2f5;
+  padding: 15px;
+} */
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 15px;
+
+  /* Background Image with Dark Overlay */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://static.sadhguru.org/d/46272/1664421322-shiva-wallpaper-blue-purple-sky.jpg")
+      no-repeat center center/cover;
+
+  /* Ensures text remains readable */
+  color: white;
+}
+
+/* Chat Window */
+.chat-window {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 15px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Message List */
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 70px; /* Space for input box */
+}
+
+/* Message Bubble */
+.message {
+  max-width: 75%;
+  padding: 12px 16px;
+  border-radius: 20px;
+  word-wrap: break-word;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* User Message (Right Aligned) */
+.user-message {
+  align-self: flex-end;
+  background: #007bff;
+  color: white;
+  border-bottom-right-radius: 5px;
+}
+
+/* Bot Message (Left Aligned) */
+.bot-message {
+  align-self: flex-start;
+  background: #e5e5ea;
+  color: black;
+  border-bottom-left-radius: 5px;
+}
+
+/* Message Time */
+.message-time {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  align-self: flex-end;
+  margin-top: 5px;
+}
+
+/* Bot Message Time */
+.bot-message .message-time {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Input Area */
+.message-input-area {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  display: flex;
+  gap: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Field */
+.message-input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  margin-top: 6px;
+  border-radius: 20px;
+  background: #f0f2f5;
+}
+
+/* Send Button */
+.send-button {
+  background: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background: #0056b3;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .message {
+    max-width: 85%;
+  }
+  .message-input-area {
+    width: 95%;
+  }
+}
